@@ -39,6 +39,17 @@ export default function Projects() {
       github: 'https://github.com/luckydubey6060',
     },
     {
+      title: 'To-Do-List-Web-APP',
+      description: 'A simple yet efficient To-Do List web app with persistent storage and a clean interface.',
+      tech: ['Flask', 'SQLite', 'SQLAlchemy', 'HTML/CSS'],
+      outcomes: [
+        'Efficient task management (Add, Update, Delete)',
+        'Persistent storage with SQLite and SQLAlchemy',
+        'Clean, responsive user interface'
+      ],
+      github: 'https://github.com/luckydubey6060',
+    },
+    {
       title: 'Business Data Management',
       description: 'Excel and SQL-based data management for business intelligence and decision making',
       tech: ['Excel', 'SQL', 'VBA', 'Python'],

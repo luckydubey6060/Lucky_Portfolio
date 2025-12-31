@@ -7,7 +7,7 @@ export default function Skills() {
   const skillCategories = [
     {
       category: 'Programming',
-      skills: ['Python', 'Java', 'SQL', 'JavaScript', 'R'],
+      skills: ['Python', 'Java', 'SQL'],
     },
     {
       category: 'Data Science & ML',
@@ -15,7 +15,7 @@ export default function Skills() {
     },
     {
       category: 'ML & AI',
-      skills: ['Anomaly Detection', 'Fraud Detection', 'NLP', 'Computer Vision', 'Deep Learning'],
+      skills: ['Anomaly Detection', 'Fraud Detection', 'NLP', 'Deep Learning'],
     },
     {
       category: 'Data Visualization',
@@ -27,7 +27,7 @@ export default function Skills() {
     },
     {
       category: 'Other Tools',
-      skills: ['Excel', 'Jupyter', 'VS Code', 'AWS', 'GCP'],
+      skills: ['Excel', 'Jupyter', 'VS Code', 'AWS'],
     },
   ]
 
