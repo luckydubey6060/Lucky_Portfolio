@@ -7,18 +7,6 @@ export default function Experience() {
 
   const certifications = [
     {
-      title: 'RHCSA Certified',
-      date: 'Jul 2025',
-      org: 'Red Hat',
-      description: 'Skilled in Linux system administration, automation, and security.'
-    },
-    {
-      title: 'Catalyst AIC (Supported by AIM, NITI Aayog)',
-      date: 'July 2024 – Sept 2024',
-      org: 'Practical Training',
-      description: 'Working on a startup idea building a smart irrigation platform that automates water distribution based on soil moisture levels.'
-    },
-    {
       title: 'HSS Abhivyakti Hackathon (5th Position)',
       date: 'Oct 2024',
       org: 'Gov. of Rajasthan, Jaipur',
@@ -56,6 +44,12 @@ export default function Experience() {
       role: 'Start-up Owner (On-Site)',
       date: 'July 2024 – Sept 2024',
       description: 'Working on a startup idea building a smart irrigation platform that automates water distribution based on soil moisture levels.'
+    },
+    {
+      title: 'RHCSA Certified',
+      role: 'Red Hat Certified System Administrator',
+      date: 'Jul 2025',
+      description: 'Skilled in Linux system administration, automation, and security. by Redhat'
     }
   ]
 
