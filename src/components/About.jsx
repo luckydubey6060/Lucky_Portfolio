@@ -35,13 +35,13 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="space-y-4"
           >
-            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 leading-relaxed font-medium">
               I'm a passionate Data Scientist and ML Engineer with a strong foundation in statistics, mathematics, and programming. My expertise spans from data analysis to building production-ready AI solutions.
             </p>
-            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
               Currently focused on solving real-world problems through machine learning and AI. I have hands-on experience with IoT solutions, fraud detection systems, and healthcare data management.
             </p>
-            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
               Beyond code, I'm continuously learning, sharing knowledge through certifications, and contributing to impactful projects with teams that value innovation and excellence.
             </p>
           </motion.div>

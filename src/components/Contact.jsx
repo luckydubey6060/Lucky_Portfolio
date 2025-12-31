@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Github, Linkedin, Mail, ExternalLink } from 'lucide-react'
+import { Github, Linkedin, Mail, Phone, ExternalLink } from 'lucide-react'
 import { useInView } from '../hooks/useInView'
 
 export default function Contact() {
@@ -11,6 +11,12 @@ export default function Contact() {
       label: 'Email',
       value: 'luckydubey6060@gmail.com',
       href: 'mailto:luckydubey6060@gmail.com',
+    },
+    {
+      icon: Phone,
+      label: 'Phone',
+      value: '+91 9649864452',
+      href: 'tel:+919649864452',
     },
     {
       icon: Github,
@@ -32,7 +38,7 @@ export default function Contact() {
       ref={ref}
       className="min-h-screen flex items-center justify-center py-20 px-4 sm:px-6 lg:px-8"
     >
-      <div className="max-w-4xl mx-auto w-full text-center">
+      <div className="max-w-6xl mx-auto w-full text-center">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -46,12 +52,12 @@ export default function Contact() {
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-lg text-gray-700 dark:text-gray-300 mb-12 max-w-2xl mx-auto"
+          className="text-lg text-gray-700 dark:text-gray-300 mb-12 max-w-2xl mx-auto font-medium"
         >
           I'm always interested in hearing about new projects and opportunities. Feel free to reach out!
         </motion.p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {contacts.map((contact, idx) => {
             const Icon = contact.icon
             return (
@@ -63,13 +69,13 @@ export default function Contact() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{ duration: 0.6, delay: idx * 0.1 }}
-                className="p-6 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700 rounded-xl hover:shadow-lg transition-all group"
+                className="p-8 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700 rounded-2xl hover:shadow-xl transition-all group border border-transparent hover:border-blue-500/30"
               >
-                <Icon className="w-8 h-8 mb-3 mx-auto text-blue-600 dark:text-cyan-400 group-hover:scale-110 transition-transform" />
-                <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
+                <Icon className="w-10 h-10 mb-4 mx-auto text-blue-600 dark:text-cyan-400 group-hover:scale-110 transition-transform" />
+                <h3 className="font-bold text-gray-900 dark:text-white mb-2 text-lg">
                   {contact.label}
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300">{contact.value}</p>
+                <p className="text-gray-600 dark:text-gray-400 font-medium break-all">{contact.value}</p>
               </motion.a>
             )
           })}
