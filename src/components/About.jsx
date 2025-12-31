@@ -6,6 +6,7 @@ export default function About() {
 
   const highlights = [
     { label: 'Education', value: 'IIT Madras BS Data Science' },
+    { label: 'Education', value: 'Global Institute of Technology Jaipur (B.Tech CSE)' },
     { label: 'Experience', value: 'ML Engineer & Data Scientist' },
     { label: 'Focus', value: 'Real-world Problem Solving' },
   ]

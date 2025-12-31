@@ -96,17 +96,68 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative"
+            className="relative flex justify-center items-center"
           >
-            <div className="aspect-square rounded-2xl overflow-hidden relative group">
-              <img
-                src="attached_assets/WhatsApp_Image_2025-12-31_at_7.19.15_PM_1767189009049.jpeg"
-                alt="Lucky Dubey"
-                className="w-full h-full object-cover"
+            <motion.div
+              animate={{ 
+                y: [0, -20, 0],
+                rotate: [0, 5, -5, 0]
+              }}
+              transition={{
+                duration: 6,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+              className="relative"
+            >
+              {/* Magical outer rings */}
+              <motion.div
+                animate={{ rotate: 360 }}
+                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                className="absolute -inset-4 rounded-full border-2 border-transparent bg-gradient-to-r from-blue-600 via-cyan-500 to-teal-500 bg-clip-border opacity-30"
               />
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-cyan-500/20 to-teal-500/20 group-hover:opacity-0 transition-opacity duration-300"></div>
-              <div className="absolute -inset-0.5 bg-gradient-to-br from-blue-600 via-cyan-500 to-teal-500 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300 blur-xl -z-10"></div>
-            </div>
+              <motion.div
+                animate={{ rotate: -360 }}
+                transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
+                className="absolute -inset-8 rounded-full border-2 border-transparent bg-gradient-to-r from-cyan-500 via-teal-500 to-blue-600 bg-clip-border opacity-20"
+              />
+
+              {/* Main circular image */}
+              <div className="relative w-80 h-80 rounded-full overflow-hidden border-4 border-gradient-to-r from-blue-600 via-cyan-500 to-teal-500 shadow-2xl">
+                <img
+                  src="attached_assets/WhatsApp_Image_2025-12-31_at_7.19.15_PM_1767189009049.jpeg"
+                  alt="Lucky Dubey"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-cyan-500/20 to-teal-500/20 hover:opacity-0 transition-opacity duration-300"></div>
+              </div>
+
+              {/* Floating particles effect */}
+              {[...Array(3)].map((_, i) => (
+                <motion.div
+                  key={i}
+                  animate={{
+                    x: [0, Math.cos(i * Math.PI * 2 / 3) * 80, 0],
+                    y: [0, Math.sin(i * Math.PI * 2 / 3) * 80, 0],
+                    opacity: [0.3, 0.8, 0.3],
+                  }}
+                  transition={{
+                    duration: 5 + i,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  }}
+                  className={`absolute w-3 h-3 rounded-full ${
+                    i === 0 ? 'bg-blue-500' : i === 1 ? 'bg-cyan-400' : 'bg-teal-400'
+                  }`}
+                  style={{
+                    top: '50%',
+                    left: '50%',
+                    marginTop: '-6px',
+                    marginLeft: '-6px',
+                  }}
+                />
+              ))}
+            </motion.div>
           </motion.div>
         </div>
       </div>
