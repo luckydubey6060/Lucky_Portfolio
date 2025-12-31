@@ -1,0 +1,167 @@
+Role:
+Act as a Data Scientist Portfolio Designer.
+You are building a modern, professional, recruiter-ready Data Scientist portfolio website.
+
+Objective:
+Create a high-impact personal portfolio for Lucky Dubey, a Data Scientist / Data Analyst / AI Engineer, using:
+
+My resume content
+
+My GitHub profile: https://github.com/luckydubey6060
+
+My projects, skills, certifications, and education
+
+📌 REQUIREMENTS
+1️⃣ Tech Stack (Use This Exactly)
+
+
+
+Styling: Tailwind CSS
+
+Animations: Framer Motion
+
+Icons: Lucide / Heroicons
+
+Charts (for projects): Recharts
+
+Theme: Dark mode (default) + light mode toggle
+
+2️⃣ Website Sections (Mandatory)
+
+Hero Section
+
+Name: Lucky Dubey
+
+Title: Data Scientist | Data Analyst | AI & ML Engineer
+
+Short punchy tagline (data-driven, impact-focused)
+
+CTA buttons:
+
+“View Projects”
+
+“Download Resume”
+
+“GitHub”
+
+“LinkedIn”
+
+About Me
+
+Concise, technical, recruiter-friendly
+
+Mention:
+
+IIT Madras BS in Data Science
+
+Strong foundation in statistics, ML, Python
+
+Interest in real-world problem solving
+
+Skills Section (with visual cards or progress bars)
+
+Programming: Python, Java, SQL
+
+Data Science: Pandas, NumPy, Scikit-learn, Statistics, tensorflow, pytorch
+
+ML & AI: ML models, anomaly detection, fraud detection
+
+Data Viz: Power BI, Tableau, Matplotlib, Seaborn
+
+Backend: Flask, Django, FastAPI
+
+Tools: Linux, Git, Excel
+
+Projects Section (MOST IMPORTANT)
+Each project must include:
+
+Title
+
+Problem Statement
+
+Tech Stack
+
+Key Outcomes
+
+GitHub link
+
+Include these projects:
+
+Hospital Data Management (Python, SQL, Power BI)
+
+UPI Fraud Detection System (ML + Flask)
+
+Smart Irrigation System (IoT + AI)
+
+Business Data Management (Excel + SQL)
+
+Add charts, metrics, or screenshots placeholders.
+
+Experience / Training
+
+Catalyst AIC (NITI Aayog supported)
+
+Startup work on Smart Irrigation
+
+Certifications & Achievements
+
+RHCSA Certified
+
+Hackathons (Govt of Rajasthan, MNIT, IIT Madras)
+
+NPTEL Elite Silver (Data Analytics with Python)
+
+Education Timeline
+
+IIT Madras – BS Data Science
+
+B.Tech CSE – Global Institute of Technology
+
+Contact Section
+
+Email
+
+GitHub
+
+LinkedIn
+
+LeetCode
+
+3️⃣ Design Guidelines
+
+Clean, minimal, FAANG-level UI
+
+Large typography
+
+Smooth scroll & micro-interactions
+
+Glassmorphism / gradient accents
+
+Fully responsive (mobile + desktop)
+
+4️⃣ Intelligence & Questions
+
+If any content is missing (bio, project details, metrics, screenshots, resume PDF link),
+ASK ME CLEAR, STEP-BY-STEP QUESTIONS BEFORE PROCEEDING
+
+Ask questions one section at a time
+
+5️⃣ Deliverables
+
+Full React project structure
+
+Clean, commented code
+
+Ready to deploy
+
+Production-quality UI
+
+Start by:
+
+Proposing the website structure
+
+Asking any missing questions
+
+Then generating the complete code
+
+Build this portfolio as if it will be reviewed by top recruiters and data science hiring managers.
