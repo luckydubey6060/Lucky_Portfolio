@@ -13,6 +13,12 @@ export default function Experience() {
       description: 'Skilled in Linux system administration, automation, and security.'
     },
     {
+      title: 'Catalyst AIC (Supported by AIM, NITI Aayog)',
+      date: 'July 2024 – Sept 2024',
+      org: 'Practical Training',
+      description: 'Working on a startup idea building a smart irrigation platform that automates water distribution based on soil moisture levels.'
+    },
+    {
       title: 'HSS Abhivyakti Hackathon (5th Position)',
       date: 'Oct 2024',
       org: 'Gov. of Rajasthan, Jaipur',
