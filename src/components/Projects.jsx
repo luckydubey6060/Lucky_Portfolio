@@ -9,8 +9,19 @@ export default function Projects() {
     {
       title: 'Hospital Data Management System',
       description: 'Comprehensive data management solution for hospital operations with analytics dashboard',
-      tech: ['Python', 'SQL', 'Power BI', 'Flask'],
+      tech: ['Python', 'SQL', 'Power BI', 'Flask', 'NumPy', 'Pandas', 'Matplotlib', 'Seaborn'],
       outcomes: ['90% improvement in data retrieval', 'Real-time dashboards', 'Automated reporting'],
+      github: 'https://github.com/luckydubey6060',
+    },
+    {
+      title: 'LLM Quiz Solver',
+      description: 'Automatic quiz solver using Claude AI and Selenium for the TDS LLM Analysis Quiz project.',
+      tech: ['Python', 'Claude AI', 'Selenium', 'Data Analysis'],
+      outcomes: [
+        'Solves data analysis quizzes automatically',
+        'Handles JavaScript-rendered pages & sequential questions',
+        'Processes PDF/CSV files and submits correct formats'
+      ],
       github: 'https://github.com/luckydubey6060',
     },
     {
