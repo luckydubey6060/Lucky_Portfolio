@@ -85,7 +85,7 @@ export default function Hero() {
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-blue-600 dark:hover:bg-cyan-500 text-gray-700 dark:text-gray-300 hover:text-white transition-all transform hover:scale-110">
                 <Linkedin size={20} />
               </a>
-              <a href="mailto:contact@example.com" className="p-3 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-blue-600 dark:hover:bg-cyan-500 text-gray-700 dark:text-gray-300 hover:text-white transition-all transform hover:scale-110">
+              <a href="mailto:luckydubey6060@gmail.com" className="p-3 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-blue-600 dark:hover:bg-cyan-500 text-gray-700 dark:text-gray-300 hover:text-white transition-all transform hover:scale-110">
                 <Mail size={20} />
               </a>
             </motion.div>
@@ -98,66 +98,31 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative flex justify-center items-center"
           >
-            <motion.div
-              animate={{ 
-                y: [0, -20, 0],
-                rotate: [0, 5, -5, 0]
-              }}
-              transition={{
-                duration: 6,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
-              className="relative"
-            >
-              {/* Magical outer rings */}
+            <div className="relative">
+              {/* Rotating gradient ring 1 */}
               <motion.div
                 animate={{ rotate: 360 }}
-                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                className="absolute -inset-4 rounded-full border-2 border-transparent bg-gradient-to-r from-blue-600 via-cyan-500 to-teal-500 bg-clip-border opacity-30"
+                transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+                className="absolute -inset-6 rounded-full bg-gradient-to-r from-blue-600 via-cyan-500 to-teal-500 opacity-25"
               />
+              
+              {/* Rotating gradient ring 2 */}
               <motion.div
                 animate={{ rotate: -360 }}
-                transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-                className="absolute -inset-8 rounded-full border-2 border-transparent bg-gradient-to-r from-cyan-500 via-teal-500 to-blue-600 bg-clip-border opacity-20"
+                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                className="absolute -inset-3 rounded-full bg-gradient-to-r from-cyan-500 via-teal-500 to-blue-600 opacity-15"
               />
 
               {/* Main circular image */}
-              <div className="relative w-80 h-80 rounded-full overflow-hidden border-4 border-gradient-to-r from-blue-600 via-cyan-500 to-teal-500 shadow-2xl">
+              <div className="relative w-80 h-80 rounded-full overflow-hidden border-4 border-blue-600 dark:border-cyan-500 shadow-2xl">
                 <img
                   src="attached_assets/WhatsApp_Image_2025-12-31_at_7.19.15_PM_1767189009049.jpeg"
                   alt="Lucky Dubey"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-cyan-500/20 to-teal-500/20 hover:opacity-0 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-cyan-500/10 to-teal-500/10"></div>
               </div>
-
-              {/* Floating particles effect */}
-              {[...Array(3)].map((_, i) => (
-                <motion.div
-                  key={i}
-                  animate={{
-                    x: [0, Math.cos(i * Math.PI * 2 / 3) * 80, 0],
-                    y: [0, Math.sin(i * Math.PI * 2 / 3) * 80, 0],
-                    opacity: [0.3, 0.8, 0.3],
-                  }}
-                  transition={{
-                    duration: 5 + i,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                  }}
-                  className={`absolute w-3 h-3 rounded-full ${
-                    i === 0 ? 'bg-blue-500' : i === 1 ? 'bg-cyan-400' : 'bg-teal-400'
-                  }`}
-                  style={{
-                    top: '50%',
-                    left: '50%',
-                    marginTop: '-6px',
-                    marginLeft: '-6px',
-                  }}
-                />
-              ))}
-            </motion.div>
+            </div>
           </motion.div>
         </div>
       </div>

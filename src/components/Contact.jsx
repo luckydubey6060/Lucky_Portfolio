@@ -9,8 +9,8 @@ export default function Contact() {
     {
       icon: Mail,
       label: 'Email',
-      value: 'lucky.dubey@example.com',
-      href: 'mailto:lucky.dubey@example.com',
+      value: 'luckydubey6060@gmail.com',
+      href: 'mailto:luckydubey6060@gmail.com',
     },
     {
       icon: Github,
@@ -91,7 +91,7 @@ export default function Contact() {
             View GitHub
           </a>
           <a
-            href="mailto:lucky.dubey@example.com"
+            href="mailto:luckydubey6060@gmail.com"
             className="flex items-center gap-2 border-2 border-blue-600 dark:border-cyan-500 text-blue-600 dark:text-cyan-400 hover:bg-blue-600 dark:hover:bg-cyan-500 hover:text-white dark:hover:text-gray-900 px-6 py-3 rounded-full font-semibold transition-all"
           >
             <Mail size={20} />
