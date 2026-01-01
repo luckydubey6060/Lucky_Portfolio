@@ -6,9 +6,10 @@ channel = "stable-24_11"
 packages = ["static-web-server"]
 
 [deployment]
-publicDir = "/"
+publicDir = "dist"
 deploymentTarget = "autoscale"
-run = ["npm", "run", "dev"]
+run = ["npm", "run", "preview"]
+build = ["npm", "run", "build"]
 
 [workflows]
 runButton = "Project"
