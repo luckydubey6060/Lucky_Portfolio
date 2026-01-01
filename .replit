@@ -7,7 +7,7 @@ packages = ["static-web-server"]
 
 [deployment]
 publicDir = "dist"
-deploymentTarget = "autoscale"
+deploymentTarget = "static"
 run = ["npm", "run", "preview"]
 build = ["npm", "run", "build"]
 
