@@ -47,13 +47,9 @@ task = "shell.exec"
 args = "npm run dev"
 waitForPort = 5000
 
-[[ports]]
-localPort = 80
-externalPort = 80
+[agent]
+expertMode = true
 
 [[ports]]
 localPort = 5000
-externalPort = 80
-
-[agent]
-expertMode = true
+externalPort = 5000
