@@ -119,7 +119,7 @@ export default function Hero() {
               {/* Main circular image */}
               <div className="relative w-96 h-96 rounded-full overflow-hidden border-4 border-blue-600 dark:border-cyan-500 shadow-2xl transition-all duration-500 hover:scale-105">
                 <img
-                  src="attached_assets/WhatsApp_Image_2025-12-31_at_7.19.15_PM_1767189009049.jpeg"
+                  src="/assets/profile.jpg"
                   alt="Lucky Dubey"
                   className="w-full h-full object-cover"
                 />

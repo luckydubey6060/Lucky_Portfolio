@@ -39,7 +39,7 @@ export default function About() {
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
               <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-2xl">
                 <img
-                  src="attached_assets/WhatsApp_Image_2025-12-31_at_7.19.15_PM_1767189009049.jpeg"
+                  src="/assets/profile.jpg"
                   alt="Lucky Dubey"
                   className="w-full h-full object-cover transform transition duration-500 group-hover:scale-110"
                 />
